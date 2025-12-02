@@ -53,19 +53,17 @@ To set up the InterviewAI application locally for development purposes, follow t
 
 3. **Install the dependencies:**
    ```bash
-   npm i
+   npm install
    
 4. **Set up environment variables:**
     ```bash
-     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
-     CLERK_SECRET_KEY
-     
-     NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-     NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-     WEBHOOK_SECRET
-     
-     NEXT_PUBLIC_GEMINI_API_KEY
-     NEXT_PUBLIC_DRIZZLE_DATABASE_URL
+    NEXT_PUBLIC_DRIZZLE_DATABASE_URL=postgresql://yours-url
+    NEXT_PUBLIC_GEMINI_API_KEY=gemini-key
+    WEBHOOK_SECRET=secret 
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_key
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=http://localhost:3000/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=http://localhost:3000/sign-up
+   CLERK_SECRET_KEY=sk_test_key
 
 5. **Run the application:**
    ```bash
